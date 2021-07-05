@@ -1,5 +1,5 @@
-<?php
 
+$<?php
 $DISTRICTS = array(
 	'Wakiso' => array(
 		'Muvule'=> 569,
@@ -22,6 +22,9 @@ $DISTRICTS = array(
 
 );
 
+
+
+
 foreach ($DISTRICTS as $index => $value) {
 	echo"<br>=====" . $index."=====<br>";
 
@@ -31,17 +34,44 @@ foreach ($DISTRICTS as $index => $value) {
 	echo"<br>Musabu=" .$value['Musabu'];
 }
 
-$sumofalltrees=array(569,80003,767363,8984,59,803,7363,89,90,703,763,29);
+$sumofalldistricts=array(569,80003,767363,8984,59,803,7363,89,90,703,763,29);
 
-echo "sumofalltrees is" .array_sum($sumofalltrees). "in both districts <br><br>";
-setcookie('sumofalltrees','866818',time()+3600);
+echo"----sum(sumofalldistricts)----=" .array_sum($sumofalldistricts)."------<br><br><br>";
 
-if(isset($_cookie['sumofalltrees'])){
-	echo $_cookie['sumofalltrees'];
+setcookie("sumofalldistricts","866818",time()+3600);
+
+if(isset($_COOKIE['sumofalldistricts'])){
+	echo $_COOKIE['sumofalldistricts'];
+setcookie("sumofalldistricts","",time()-60);
 }
 else{
-	echo"----the echo doesnt exist----<br>;
+	echo"----the echo doesnt exist----" ."<br>";
 }
 
-$sumofmusabutrees=array(8984,89,29);
-echo ("sumofmasabutrees is" .array_sum($sumofmusabutrees). "in both districts<br>"
+$sumofmusabu_trees=array(8984,89,29);
+echo "----sum(sumofmusabu_trees)----=" .array_sum($sumofmusabu_trees)."----<br><br>";
+
+session_start();
+$_SESSION['sumofmasabu_trees']="9102";
+echo $_SESSION["sumofmasabu_trees"]. "<br>";
+?>
+
+<|DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title> The internship</title>
+
+		</head>
+
+		<body>
+			<form method="POST" action "master.php">
+				<label>sumoftrees</label>
+			    <input type"number" name - +>
+			    <a href="master.php">Master page </a>				
+			</form>
+		</body>
+	</html>
+
+
+
