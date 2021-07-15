@@ -1,6 +1,6 @@
 <?php
 require('mysql_connection.php');
-require('../css/AfricasTalkingGateway.php');
+require('../AfricasTalkingGateway.php');
 
 $name = $_POST['person_name'];
 
