@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php require('mysql_connection.php') ?>
+
 <head>
 	<meta charset="utf-8">
 	<title>Register</title>

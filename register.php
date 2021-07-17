@@ -39,6 +39,7 @@
 						</select>
 						<hr>
 						<button  type="submit">Register</button>
+						
 					</div>
 					
 				</div>
