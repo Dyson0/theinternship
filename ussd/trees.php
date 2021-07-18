@@ -5,11 +5,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Students</title>
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" type="text/css" href="../theinternship/css/app.css">
 </head>
 <body>
 
-	<?php include 'header.php'; 
+	<?php include './../header.php'; 
 
 	  $students = $mysqli_connection->query("SELECT students.ID,students.NAME,students.EMAIL,students.PHONE_NUMBER,course.ID AS course_id FROM students,courses WHERE students.COURSE_ID = COURSE.ID");
 
