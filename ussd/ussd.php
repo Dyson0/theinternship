@@ -86,7 +86,7 @@ switch ($level) {
 		 	if($saveUser){
 
 		 		$message = "Hello ".$user_name." Thank you for registering with Climate (U) ltd. How can we help you";		        
-				$apikey     = "e634670cf78becaa2e243f3ad5be7244bc53e275b2a7936f73b6617f834be381";			 
+				$apikey     = "77b9a15118feb1b4cb12e33071c39e32c3a375172c4912c292cbd278b3a2f1b3";			 
 				$gateway    = new AfricasTalkingGateway("sandbox", $apikey,"sandbox");
 
 				$gateway->sendMessage($phone_number, $message); 
@@ -117,7 +117,7 @@ switch ($level) {
 		 	    $sqliCon->query("INSERT INTO trees(member_id,number_of_trees)VALUES('$member_id','$number_of_trees')");
 
 		 	    $message = "Hello $member_name, Thank you for contacting us. You have recorded $number_of_trees tree(s)";
-			    $apikey     = "e634670cf78becaa2e243f3ad5be7244bc53e275b2a7936f73b6617f834be381";			 
+			    $apikey     = "77b9a15118feb1b4cb12e33071c39e32c3a375172c4912c292cbd278b3a2f1b3";			 
 			    $gateway    = new AfricasTalkingGateway("sandbox", $apikey,"sandbox");
 			    $gateway->sendMessage($phone_number, $message);
 		 	    echo "END $message";
