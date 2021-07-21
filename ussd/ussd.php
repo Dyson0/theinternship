@@ -1,7 +1,7 @@
 <?php 
 header("Content-type:text/plane");
 require('AfricasTalkingGateway.php');
-
+require('sql_connection.php');
 
 $phone_number = $_POST['phoneNumber'];
 
