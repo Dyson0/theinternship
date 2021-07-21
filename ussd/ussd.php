@@ -1,6 +1,6 @@
 <?php 
 header("Content-type:text/plane");
-require('../AfricasTalkingGateway.php');
+require('AfricasTalkingGateway.php');
 
 
 $phone_number = $_POST['phoneNumber'];
@@ -86,8 +86,8 @@ switch ($level) {
 		 	if($saveUser){
 
 		 		$message = "Hello ".$user_name." Thank you for registering with Climate (U) ltd. How can we help you";		        
-				$apikey     = "77b9a15118feb1b4cb12e33071c39e32c3a375172c4912c292cbd278b3a2f1b3";			 
-				$gateway    = new AfricasTalkingGateway("sandbox", $apikey,"sandbox");
+				$apikey  = "77b9a15118feb1b4cb12e33071c39e32c3a375172c4912c292cbd278b3a2f1b3";			 
+				$gateway = new AfricasTalkingGateway("sandbox", $apikey,"sandbox");
 
 				$gateway->sendMessage($phone_number, $message); 
 
